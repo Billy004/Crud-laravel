@@ -35,7 +35,7 @@
                             </div>
                             <div class="mb-3">
                                 <label>Is Active</label>
-                                <input type="checkbox" name="is_active" {{$categorie->is_active ==true ? checked: '' }}>
+                                <input type="checkbox" name="is_active" {{$categorie->is_active==true ? 'checked' : '' }}/>
                                 @error('is_active') <span class="text-danger">{{$message}}</span>@enderror
                             </div>
                             <div class="md-3">
